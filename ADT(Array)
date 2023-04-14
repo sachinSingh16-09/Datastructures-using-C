@@ -3,11 +3,11 @@
 #include <stdio.h>
 #include <stdlib.h>
    struct Array{
-       int total_size;
-       int used_size;
-       int *ptr;
+       int total_size;                                           // total array size we want
+       int used_size;                                            // the memory used
+       int *ptr;                                                 // pointer pointing to the first element of the array marks
    };
-   void create_array(struct Array*a, int tsize, int usize)
+   void create_array(struct Array*a, int tsize, int usize)       // local variables of the function create_array
    {
        a->total_size= tsize;
        a->used_size= usize;
